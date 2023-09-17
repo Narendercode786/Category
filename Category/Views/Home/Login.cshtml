@@ -1,0 +1,12 @@
+﻿
+@{
+    string error = ViewData["Invalid"] as string;
+}
+<div class="text-danger">
+    @error
+</div>
+<form method="post" asp-action="Index" asp-controller="Login">
+    <input type="text" name="username" />
+    <input type="text" name="password" />
+    <input type="submit" name="Submit"/>
+</form>
